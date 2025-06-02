@@ -1,8 +1,7 @@
-/* Основные переменные */
 :root {
-  --background: #111827; /* Темно-синий фон */
+  --background: #111827;
   --foreground: #f8fafc;
-  --card: #1e293b; /* Чуть светлее синий для карточки */
+  --card: #1e293b;
   --card-foreground: #f8fafc;
   --muted: #1e293b;
   --muted-foreground: #94a3b8;
@@ -86,7 +85,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #64748b; /* Светло-серый для текста загрузки */
+  color: #64748b;
 }
 
 .video-frame {
@@ -299,7 +298,6 @@ body {
   margin: 0;
 }
 
-/* Responsive styles */
 @media (max-width: 640px) {
   .title,
   .page-title {
