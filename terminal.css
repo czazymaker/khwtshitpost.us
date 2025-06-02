@@ -1,0 +1,85 @@
+.terminal-body {
+  background-color: #000;
+  color: #4ade80;
+  font-family: "JetBrains Mono", monospace;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.terminal-back-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  background-color: transparent;
+  border: 1px solid #4ade80;
+  color: #4ade80;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.terminal-back-btn:hover {
+  background-color: rgba(74, 222, 128, 0.2);
+  color: #4ade80;
+}
+
+.back-button {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.terminal-container {
+  width: 100%;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.terminal-output {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+@media (min-width: 640px) {
+  .terminal-output {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .terminal-output {
+    font-size: 1.125rem;
+  }
+}
+
+.cursor {
+  display: inline-block;
+  width: 0.5em;
+  height: 1em;
+  background-color: #4ade80;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.terminal-footer {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  color: #4ade80;
+  text-align: center;
+}

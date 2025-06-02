@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    // Перенаправление на главную страницу через 3 секунды
+    setTimeout(function() {
+      window.location.href = 'index.html';
+    }, 3000);
+  </script>
+</head>
+<body>
+  <main class="container">
+    <h1 class="title">404 - Страница не найдена</h1>
+    <div class="card">
+      <p style="text-align: center; margin-bottom: 1rem;">Запрошенная страница не существует.</p>
+      <p style="text-align: center;">Вы будете перенаправлены на главную страницу через 3 секунды.</p>
+    </div>
+    <div style="margin-top: 2rem;">
+      <a href="index.html" class="button">
+        <span>Вернуться на главную</span>
+      </a>
+    </div>
+    <footer class="footer">
+      © <span id="current-year"></span> khwtshitpost.us
+    </footer>
+  </main>
+
+  <script>
+    // Установка текущего года в футере
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

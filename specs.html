@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Specs - khwtshitpost.us</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="terminal.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="terminal-body">
+  <div class="back-button">
+    <a href="index.html" class="terminal-back-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m12 19-7-7 7-7"></path>
+        <path d="M19 12H5"></path>
+      </svg>
+    </a>
+  </div>
+
+  <div class="terminal-container">
+    <pre id="terminal-output" class="terminal-output">
+Last login: <span id="current-date"></span> on tty1
+[khwt@shitpost ~]# neofetch
+
+                   -`                    khwt@shitpost
+                  .o+`                   --------------
+                 `ooo/                   OS: Arch Linux x86_64
+                `+oooo:                  Host: B450M DS3H
+               `+oooooo:                 Kernel: 5.15.0-arch
+               -+oooooo+:                Uptime: <span id="uptime-counter">0 secs</span>
+             `/:-:++oooo+:               Packages: 169 (pacman)
+            `/++++/+++++++:              Shell: bash 5.1.16
+           `/++++++++++++++:             Resolution: 1920x1080
+          `/+++ooooooooooooo/`           Terminal: /dev/tty1
+         ./ooosssso++osssssso+`          CPU: AMD Ryzen 5 1600X Six-Core Processor @ 3.60GHz
+        .oossssso-\`\`\``/ossssss+`         GPU: NVIDIA GeForce GTX 1050 Ti
+       -osssssso.      :ssssssso.        Memory: 10240MiB / 16384 MiB
+      :osssssss/        osssso+++.       
+     /ossssssss/        +ssssooo/-
+   `/ossssso+/:-        -:/+osssso+-
+  `+sso+:-`                 `.-/+oso:
+ `++:.                           `-/+/
+ .`                                 `/
+
+[khwt@shitpost ~]# <span class="cursor"></span>
+</pre>
+  </div>
+
+  <footer class="terminal-footer">
+    © <span id="current-year"></span> khwtshitpost.us
+  </footer>
+
+  <script src="terminal.js"></script>
+  <script>
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    
+    // Set current date
+    const options = { weekday: 'short', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', year: 'numeric' };
+    document.getElementById('current-date').textContent = new Date().toLocaleDateString('en-US', options);
+  </script>
+</body>
+</html>
