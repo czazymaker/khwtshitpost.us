@@ -1,9 +1,6 @@
-// Скрипт для страницы терминала
 document.addEventListener("DOMContentLoaded", () => {
-  // Установка текущего года в футере
   document.getElementById("current-year").textContent = new Date().getFullYear()
 
-  // Установка текущей даты
   const options = {
     weekday: "short",
     month: "short",
@@ -15,17 +12,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   document.getElementById("current-date").textContent = new Date().toLocaleDateString("en-US", options)
 
-  // Счетчик uptime
   const uptimeCounter = document.getElementById("uptime-counter")
   const startTime = Date.now()
 
-  // Обновление счетчика uptime каждую секунду
   setInterval(() => {
     const elapsedSeconds = Math.floor((Date.now() - startTime) / 1000)
     uptimeCounter.textContent = formatUptime(elapsedSeconds)
   }, 1000)
 
-  // Форматирование uptime для отображения
   function formatUptime(seconds) {
     if (seconds < 60) return `${seconds} secs`
     if (seconds < 3600) {
