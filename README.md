@@ -1,15 +1,11 @@
 # khwtshitpost.us
 
-Минималистичный сайт с последними видео с YouTube канала и информацией о контактах.
+a minimalist site featuring the latest videos from the youtube channel and contact info.
 
-## Особенности
+## features
 
-- Отображение последнего видео с YouTube канала
-- Страница с системной информацией в стиле терминала
-- Страница с социальными ссылками
-- Поддержка светлой и темной темы
-- Полностью статический сайт на HTML, CSS и JavaScript
-
-## Деплой
-
-Сайт размещен на GitHub Pages.
+* displays the latest video from the youtube channel
+* system info page styled like a terminal
+* page with social media links
+* light and dark theme support
+* fully static site built with html, css, and javascript
