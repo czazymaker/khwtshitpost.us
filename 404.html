@@ -9,7 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script>
-    // Перенаправление на главную страницу через 3 секунды
     setTimeout(function() {
       window.location.href = 'index.html';
     }, 3000);
@@ -17,14 +16,14 @@
 </head>
 <body>
   <main class="container">
-    <h1 class="title">404 - Страница не найдена</h1>
+    <h1 class="title">404 - Page Not Found</h1>
     <div class="card">
-      <p style="text-align: center; margin-bottom: 1rem;">Запрошенная страница не существует.</p>
-      <p style="text-align: center;">Вы будете перенаправлены на главную страницу через 3 секунды.</p>
+      <p style="text-align: center; margin-bottom: 1rem;">The requested page does not exist.</p>
+      <p style="text-align: center;">You will be redirected to the main page in 3 seconds.</p>
     </div>
     <div style="margin-top: 2rem;">
       <a href="index.html" class="button">
-        <span>Вернуться на главную</span>
+        <span>Return to home page</span>
       </a>
     </div>
     <footer class="footer">
@@ -33,7 +32,6 @@
   </main>
 
   <script>
-    // Установка текущего года в футере
     document.getElementById('current-year').textContent = new Date().getFullYear();
   </script>
 </body>
